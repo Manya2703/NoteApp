@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace NoteApp
 {
+
     public partial class NoteForm : Form
     {
+        private const string Version = "1.0.0";
         private NoteManager noteManager;
         private TextBox titleTextBox;
         private TextBox contentTextBox;
@@ -24,7 +26,7 @@ namespace NoteApp
             InitializeComponent(); // ВЫЗЫВАЕМ ЕГО В ПЕРВУЮ ОЧЕРЕДЬ!
 
             // Задаем свойства формы (можно и в дизайнере)
-            this.Text = "Управление заметками";
+            this.Text = $"Управление заметками (Версия {Version})";
             this.Width = 500;
             this.Height = 400;
 
